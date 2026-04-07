@@ -67,6 +67,6 @@ export const handleEarlyAccessClick = async () => {
         rzp1.open();
     } catch (err) {
         console.error('Error opening Razorpay:', err);
-        alert('Could not open payment gateway.');
+        alert('Could not open payment gateway. Error: ' + err.message);
     }
 }
