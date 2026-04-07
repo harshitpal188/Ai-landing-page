@@ -1,0 +1,10 @@
+{
+  "name": "ai-landing-page-root",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev": "npm run install:all && start cmd /k npm run dev:frontend && start cmd /k npm run dev:backend"
+  }
+}
