@@ -43,7 +43,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
         onClick={onToggle}
         className="w-full flex items-center justify-between p-6 md:p-7 text-left cursor-pointer group"
       >
-        <h3 className={`font-bold text-xl pr-4 transition-colors ${isOpen ? 'text-purple-700' : 'text-gray-900 group-hover:text-purple-600'}`}>
+        <h3 className={`font-bold text-xl lg:text-lg pr-4 transition-colors ${isOpen ? 'text-purple-700' : 'text-gray-900 group-hover:text-purple-600'}`}>
           {faq.question}
         </h3>
         <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all ${isOpen ? 'bg-purple-600 rotate-180' : 'bg-gray-100 group-hover:bg-purple-100'}`}>
@@ -52,7 +52,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="px-6 md:px-7 pb-6 md:pb-7">
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg lg:text-base text-gray-600 leading-relaxed">
             {faq.answer}
           </p>
         </div>
@@ -68,10 +68,10 @@ export default function FAQSection() {
     <section className="py-24 md:py-32 bg-white" id="faq">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 max-w-4xl">
         <div className="text-center mb-20">
-          <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <HelpCircle className="w-8 h-8 text-purple-600" />
+          <div className="w-16 h-16 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="w-8 h-8 lg:w-6 lg:h-6 text-purple-600" />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Questions? We've Got <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">Answers.</span>
           </h2>

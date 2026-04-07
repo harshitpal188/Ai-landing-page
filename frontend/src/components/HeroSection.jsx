@@ -47,14 +47,14 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-white leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-4xl lg:text-4xl font-extrabold text-white leading-[1.1] mb-8 tracking-tight">
               Stop Missing <br/>
               <span className="gradient-text">
                 Compliance Deadlines
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-purple-200/90 mb-10 leading-relaxed max-w-xl">
+            <p className="text-xl md:text-xl lg:text-lg text-purple-200/90 mb-10 leading-relaxed max-w-xl">
               The smartest compliance calendar for Indian Agencies & Tech Startups. 
               Know exactly what you need to file, from GST and TDS to ISO 27001 
               and SOC2, and discover government schemes you qualify for.
@@ -62,20 +62,20 @@ export default function HeroSection() {
 
             <ul className="space-y-4 mb-12">
               <li className="flex items-start gap-4">
-                <CheckIcon className="w-7 h-7 text-emerald-400 flex-shrink-0 mt-0.5" />
-                <span className="text-xl text-purple-100">
+                <CheckIcon className="w-7 h-7 lg:w-5 lg:h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <span className="text-xl lg:text-lg text-purple-100">
                   <strong className="text-white font-semibold">Never miss a GST, TDS, or ROC deadline</strong> with smart reminders
                 </span>
               </li>
               <li className="flex items-start gap-4">
-                <CheckIcon className="w-7 h-7 text-emerald-400 flex-shrink-0 mt-0.5" />
-                <span className="text-xl text-purple-100">
+                <CheckIcon className="w-7 h-7 lg:w-5 lg:h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <span className="text-xl lg:text-lg text-purple-100">
                   <strong className="text-white font-semibold">Know your tech compliance obligations (SOC2, ISO)</strong> in 10 questions
                 </span>
               </li>
               <li className="flex items-start gap-4">
-                <CheckIcon className="w-7 h-7 text-emerald-400 flex-shrink-0 mt-0.5" />
-                <span className="text-xl text-purple-100">
+                <CheckIcon className="w-7 h-7 lg:w-5 lg:h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <span className="text-xl lg:text-lg text-purple-100">
                   <strong className="text-white font-semibold">Discover ₹10-50L in Startup India funding</strong> you didn't know existed
                 </span>
               </li>
@@ -84,31 +84,31 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={scrollToWaitlist}
-                className="group bg-white text-purple-700 px-9 py-4.5 rounded-xl font-bold text-lg hover:bg-purple-50 transition-all shadow-xl shadow-purple-900/30 flex items-center justify-center gap-2.5 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                className="group bg-white text-purple-700 px-9 py-4.5 lg:px-6 lg:py-3 rounded-xl font-bold text-lg lg:text-base hover:bg-purple-50 transition-all shadow-xl shadow-purple-900/30 flex items-center justify-center gap-2.5 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
               >
                 Join Free Waitlist
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform" />
               </button>
 
               <button 
                 onClick={scrollToEarlyAccess}
-                className="group border-2 border-white/30 text-white px-9 py-4.5 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white/50 transition-all flex items-center justify-center gap-2.5 cursor-pointer backdrop-blur-sm"
+                className="group border-2 border-white/30 text-white px-9 py-4.5 lg:px-6 lg:py-3 rounded-xl font-bold text-lg lg:text-base hover:bg-white/10 hover:border-white/50 transition-all flex items-center justify-center gap-2.5 cursor-pointer backdrop-blur-sm"
               >
-                <Zap className="w-5 h-5 text-yellow-300" />
+                <Zap className="w-5 h-5 lg:w-4 lg:h-4 text-yellow-300" />
                 Get Early Access (50% OFF)
               </button>
             </div>
 
             <div className="mt-10 flex items-center gap-5">
               <div className="flex -space-x-3">
-                <div className="w-11 h-11 rounded-full border-2 border-purple-900 bg-gradient-to-br from-purple-300 to-pink-300 shadow-lg"></div>
-                <div className="w-11 h-11 rounded-full border-2 border-purple-900 bg-gradient-to-br from-blue-300 to-indigo-300 shadow-lg"></div>
-                <div className="w-11 h-11 rounded-full border-2 border-purple-900 bg-gradient-to-br from-green-300 to-emerald-300 shadow-lg"></div>
-                <div className="w-11 h-11 rounded-full border-2 border-purple-900 bg-gradient-to-br from-yellow-300 to-orange-300 flex items-center justify-center text-orange-800 text-sm font-bold shadow-lg">
+                <div className="w-11 h-11 lg:w-9 lg:h-9 rounded-full border-2 border-purple-900 bg-gradient-to-br from-purple-300 to-pink-300 shadow-lg"></div>
+                <div className="w-11 h-11 lg:w-9 lg:h-9 rounded-full border-2 border-purple-900 bg-gradient-to-br from-blue-300 to-indigo-300 shadow-lg"></div>
+                <div className="w-11 h-11 lg:w-9 lg:h-9 rounded-full border-2 border-purple-900 bg-gradient-to-br from-green-300 to-emerald-300 shadow-lg"></div>
+                <div className="w-11 h-11 lg:w-9 lg:h-9 rounded-full border-2 border-purple-900 bg-gradient-to-br from-yellow-300 to-orange-300 flex items-center justify-center text-orange-800 text-sm lg:text-xs font-bold shadow-lg">
                   +497
                 </div>
               </div>
-              <p className="text-purple-200 text-lg">
+              <p className="text-purple-200 text-lg lg:text-base">
                 <strong className="text-white">500+</strong> founders already on the waitlist
               </p>
             </div>

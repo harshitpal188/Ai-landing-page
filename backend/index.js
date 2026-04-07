@@ -76,7 +76,15 @@ app.post('/api/waitlist/signup', async (req, res) => {
     });
 
     // Send welcome email
-    await sendWaitlistWelcomeEmail(email);
+    try {
+      if (process.env.SMTP_USER && process.env.SMTP_PASS) {
+        await sendWaitlistWelcomeEmail(email);
+      } else {
+        console.warn('SMTP credentials not configured. Skipping welcome email.');
+      }
+    } catch (emailError) {
+      console.error('Failed to send welcome email:', emailError);
+    }
 
     res.status(201).json({ 
       success: true, 

@@ -186,11 +186,11 @@ export default function FeaturesSection() {
           <p className="text-purple-600 font-bold text-base uppercase tracking-[0.15em] mb-4">
             ONE PLATFORM, THREE SUPERPOWERS
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Finally Know What You <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">Don't Know</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
             Stop guessing. Start knowing. Stay compliant without the headache.
           </p>
         </div>
@@ -204,11 +204,11 @@ export default function FeaturesSection() {
                 <span className="font-bold text-base">FEATURE #1</span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-3xl font-extrabold text-gray-900 mb-6 tracking-tight">
                 Smart Compliance Calendar
               </h3>
 
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-lg text-gray-600 mb-8 leading-relaxed">
                 Never miss another GST, TDS, advance tax, or ROC filing deadline. We track every 
                 compliance obligation for tech startups and agencies and send 
                 you reminders 7 days before each deadline.
@@ -222,10 +222,10 @@ export default function FeaturesSection() {
                   { icon: AlertCircle, text: 'Penalty warnings:', desc: 'See exactly what happens if you miss it', color: 'blue' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className={`w-10 h-10 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                      <item.icon className={`w-5 h-5 text-${item.color}-600`} />
+                    <div className={`w-10 h-10 lg:w-8 lg:h-8 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                      <item.icon className={`w-5 h-5 lg:w-4 lg:h-4 text-${item.color}-600`} />
                     </div>
-                    <span className="text-xl text-gray-700 leading-relaxed">
+                    <span className="text-xl lg:text-base text-gray-700 leading-relaxed">
                       <strong className="text-gray-900">{item.text}</strong> {item.desc}
                     </span>
                   </li>
@@ -233,7 +233,7 @@ export default function FeaturesSection() {
               </ul>
 
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-5 rounded-r-xl">
-                <p className="text-green-800 font-semibold text-lg">
+                <p className="text-green-800 font-semibold text-lg lg:text-base">
                   💚 Result: Zero missed deadlines. Zero penalties. Zero stress.
                 </p>
               </div>
@@ -256,11 +256,11 @@ export default function FeaturesSection() {
                 <span className="font-bold text-base">FEATURE #2</span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-3xl font-extrabold text-gray-900 mb-6 tracking-tight">
                 Compliance Obligation Mapper
               </h3>
 
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-lg text-gray-600 mb-8 leading-relaxed">
                 Answer 10 simple questions about your tech product. Get a personalized 
                 list of every data compliance requirement that applies to YOU (GDPR, SOC2, DPIA).
               </p>
@@ -273,10 +273,10 @@ export default function FeaturesSection() {
                   { icon: Target, text: 'Priority ranking:', desc: 'Focus on high-risk items first', color: 'purple' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className={`w-10 h-10 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                      <item.icon className={`w-5 h-5 text-${item.color}-600`} />
+                    <div className={`w-10 h-10 lg:w-8 lg:h-8 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                      <item.icon className={`w-5 h-5 lg:w-4 lg:h-4 text-${item.color}-600`} />
                     </div>
-                    <span className="text-xl text-gray-700 leading-relaxed">
+                    <span className="text-xl lg:text-base text-gray-700 leading-relaxed">
                       <strong className="text-gray-900">{item.text}</strong> {item.desc}
                     </span>
                   </li>
@@ -284,7 +284,7 @@ export default function FeaturesSection() {
               </ul>
 
               <div className="bg-gradient-to-r from-purple-50 to-violet-50 border-l-4 border-purple-500 p-5 rounded-r-xl">
-                <p className="text-purple-800 font-semibold text-lg">
+                <p className="text-purple-800 font-semibold text-lg lg:text-base">
                   💜 Result: You finally know exactly what you need to do to stay compliant.
                 </p>
               </div>
@@ -301,11 +301,11 @@ export default function FeaturesSection() {
                 <span className="font-bold text-base">FEATURE #3</span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-3xl font-extrabold text-gray-900 mb-6 tracking-tight">
                 Government Schemes Matcher
               </h3>
 
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-lg text-gray-600 mb-8 leading-relaxed">
                 Discover government grants, tax holidays, and subsidies for tech innovation 
                 you qualify for. We scan central and state schemes specifically for SaaS and Agencies.
               </p>
@@ -318,10 +318,10 @@ export default function FeaturesSection() {
                   { icon: Clock, text: 'Deadline tracking:', desc: 'Never miss a scheme application window', color: 'amber' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className={`w-10 h-10 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                      <item.icon className={`w-5 h-5 text-${item.color}-600`} />
+                    <div className={`w-10 h-10 lg:w-8 lg:h-8 bg-${item.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                      <item.icon className={`w-5 h-5 lg:w-4 lg:h-4 text-${item.color}-600`} />
                     </div>
-                    <span className="text-xl text-gray-700 leading-relaxed">
+                    <span className="text-xl lg:text-base text-gray-700 leading-relaxed">
                       <strong className="text-gray-900">{item.text}</strong> {item.desc}
                     </span>
                   </li>
@@ -329,7 +329,7 @@ export default function FeaturesSection() {
               </ul>
 
               <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
-                <p className="text-amber-800 font-semibold text-xl">
+                <p className="text-amber-800 font-semibold text-xl lg:text-base">
                   🎁 Result: Average startup discovers ₹15-50L in funding opportunities.
                 </p>
               </div>
