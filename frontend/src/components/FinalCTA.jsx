@@ -20,7 +20,7 @@ export default function FinalCTA() {
           <span className="text-base font-medium text-purple-200">Join 500+ founders already on board</span>
         </div>
 
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-tight tracking-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-8 leading-tight tracking-tight">
           Stop Flying Blind <br className="hidden md:block" />
           on <span className="gradient-text">Compliance</span>
         </h2>

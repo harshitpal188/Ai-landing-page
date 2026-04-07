@@ -47,7 +47,7 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-8 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-white leading-[1.1] mb-8 tracking-tight">
               Stop Missing <br/>
               <span className="gradient-text">
                 Compliance Deadlines

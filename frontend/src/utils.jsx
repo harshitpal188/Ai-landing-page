@@ -18,7 +18,8 @@ export const scrollToEarlyAccess = () => {
 
 export const handleEarlyAccessClick = async () => {
     try {
-        const response = await fetch('http://localhost:5000/api/subscription/early-access', {
+        const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const response = await fetch(`${apiBase}/api/subscription/early-access`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: 'test@example.com', name: 'Test User' }) // In a real app, you'd collect this first
@@ -39,7 +40,8 @@ export const handleEarlyAccessClick = async () => {
             description: "Early Access Subscription",
             handler: async function (response) {
                 // Verify payment
-                const verifyRes = await fetch('http://localhost:5000/api/subscription/verify-payment', {
+                const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+                const verifyRes = await fetch(`${apiBase}/api/subscription/verify-payment`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({

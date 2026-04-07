@@ -12,7 +12,8 @@ export default function PricingSection() {
     setLoading(true);
     setStatus(null);
     try {
-      const response = await fetch('http://localhost:5000/api/waitlist/signup', {
+      const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${apiBase}/api/waitlist/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
@@ -42,7 +43,7 @@ export default function PricingSection() {
           <p className="text-purple-600 font-bold text-base uppercase tracking-[0.15em] mb-4">
             SIMPLE PRICING
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Choose Your Path
           </h2>
           <p className="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
